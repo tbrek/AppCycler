@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D582C4D62074EF93004A1383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582C4D52074EF93004A1383 /* AppDelegate.swift */; };
-		D582C4D82074EF93004A1383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582C4D72074EF93004A1383 /* ViewController.swift */; };
-		D582C4DA2074EF93004A1383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D582C4D92074EF93004A1383 /* Assets.xcassets */; };
-		D5FF5D8B20750E4A00A208BF /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5FF5D8A20750E4A00A208BF /* Window.xib */; };
+		D5FF5D9920750E9500A208BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF5D9820750E9500A208BF /* AppDelegate.swift */; };
+		D5FF5D9B20750E9500A208BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FF5D9A20750E9500A208BF /* Assets.xcassets */; };
+		D5FF5D9E20750E9500A208BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5FF5D9C20750E9500A208BF /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D582C4D22074EF93004A1383 /* AppCycler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCycler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D582C4D52074EF93004A1383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D582C4D72074EF93004A1383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D582C4D92074EF93004A1383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D582C4DE2074EF93004A1383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D582C4DF2074EF93004A1383 /* AppCycler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppCycler.entitlements; sourceTree = "<group>"; };
-		D5FF5D8A20750E4A00A208BF /* Window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
+		D5FF5D9520750E9500A208BF /* AppCycler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCycler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FF5D9820750E9500A208BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5FF5D9A20750E9500A208BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5FF5D9D20750E9500A208BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D5FF5D9F20750E9500A208BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FF5DA020750E9500A208BF /* AppCycler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppCycler.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D582C4CF2074EF93004A1383 /* Frameworks */ = {
+		D5FF5D9220750E9500A208BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,31 +32,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D582C4C92074EF93004A1383 = {
+		D5FF5D8C20750E9500A208BF = {
 			isa = PBXGroup;
 			children = (
-				D582C4D42074EF93004A1383 /* AppCycler */,
-				D582C4D32074EF93004A1383 /* Products */,
+				D5FF5D9720750E9500A208BF /* AppCycler */,
+				D5FF5D9620750E9500A208BF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D582C4D32074EF93004A1383 /* Products */ = {
+		D5FF5D9620750E9500A208BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D582C4D22074EF93004A1383 /* AppCycler.app */,
+				D5FF5D9520750E9500A208BF /* AppCycler.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D582C4D42074EF93004A1383 /* AppCycler */ = {
+		D5FF5D9720750E9500A208BF /* AppCycler */ = {
 			isa = PBXGroup;
 			children = (
-				D582C4D52074EF93004A1383 /* AppDelegate.swift */,
-				D5FF5D8A20750E4A00A208BF /* Window.xib */,
-				D582C4D72074EF93004A1383 /* ViewController.swift */,
-				D582C4D92074EF93004A1383 /* Assets.xcassets */,
-				D582C4DE2074EF93004A1383 /* Info.plist */,
-				D582C4DF2074EF93004A1383 /* AppCycler.entitlements */,
+				D5FF5D9820750E9500A208BF /* AppDelegate.swift */,
+				D5FF5D9A20750E9500A208BF /* Assets.xcassets */,
+				D5FF5D9C20750E9500A208BF /* MainMenu.xib */,
+				D5FF5D9F20750E9500A208BF /* Info.plist */,
+				D5FF5DA020750E9500A208BF /* AppCycler.entitlements */,
 			);
 			path = AppCycler;
 			sourceTree = "<group>";
@@ -66,13 +63,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D582C4D12074EF93004A1383 /* AppCycler */ = {
+		D5FF5D9420750E9500A208BF /* AppCycler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D582C4E22074EF93004A1383 /* Build configuration list for PBXNativeTarget "AppCycler" */;
+			buildConfigurationList = D5FF5DA320750E9500A208BF /* Build configuration list for PBXNativeTarget "AppCycler" */;
 			buildPhases = (
-				D582C4CE2074EF93004A1383 /* Sources */,
-				D582C4CF2074EF93004A1383 /* Frameworks */,
-				D582C4D02074EF93004A1383 /* Resources */,
+				D5FF5D9120750E9500A208BF /* Sources */,
+				D5FF5D9220750E9500A208BF /* Frameworks */,
+				D5FF5D9320750E9500A208BF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -80,26 +77,26 @@
 			);
 			name = AppCycler;
 			productName = AppCycler;
-			productReference = D582C4D22074EF93004A1383 /* AppCycler.app */;
+			productReference = D5FF5D9520750E9500A208BF /* AppCycler.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D582C4CA2074EF93004A1383 /* Project object */ = {
+		D5FF5D8D20750E9500A208BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Tom Brek";
 				TargetAttributes = {
-					D582C4D12074EF93004A1383 = {
+					D5FF5D9420750E9500A208BF = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = D582C4CD2074EF93004A1383 /* Build configuration list for PBXProject "AppCycler" */;
+			buildConfigurationList = D5FF5D9020750E9500A208BF /* Build configuration list for PBXProject "AppCycler" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,42 +104,52 @@
 				en,
 				Base,
 			);
-			mainGroup = D582C4C92074EF93004A1383;
-			productRefGroup = D582C4D32074EF93004A1383 /* Products */;
+			mainGroup = D5FF5D8C20750E9500A208BF;
+			productRefGroup = D5FF5D9620750E9500A208BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D582C4D12074EF93004A1383 /* AppCycler */,
+				D5FF5D9420750E9500A208BF /* AppCycler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D582C4D02074EF93004A1383 /* Resources */ = {
+		D5FF5D9320750E9500A208BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D582C4DA2074EF93004A1383 /* Assets.xcassets in Resources */,
-				D5FF5D8B20750E4A00A208BF /* Window.xib in Resources */,
+				D5FF5D9B20750E9500A208BF /* Assets.xcassets in Resources */,
+				D5FF5D9E20750E9500A208BF /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D582C4CE2074EF93004A1383 /* Sources */ = {
+		D5FF5D9120750E9500A208BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D582C4D82074EF93004A1383 /* ViewController.swift in Sources */,
-				D582C4D62074EF93004A1383 /* AppDelegate.swift in Sources */,
+				D5FF5D9920750E9500A208BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		D5FF5D9C20750E9500A208BF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5FF5D9D20750E9500A208BF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		D582C4E02074EF93004A1383 /* Debug */ = {
+		D5FF5DA120750E9500A208BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -156,6 +163,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -163,6 +171,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -199,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		D582C4E12074EF93004A1383 /* Release */ = {
+		D5FF5DA220750E9500A208BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,6 +222,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -220,6 +230,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -248,13 +259,13 @@
 			};
 			name = Release;
 		};
-		D582C4E32074EF93004A1383 /* Debug */ = {
+		D5FF5DA420750E9500A208BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AppCycler/AppCycler.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				INFOPLIST_FILE = AppCycler/Info.plist;
@@ -266,13 +277,13 @@
 			};
 			name = Debug;
 		};
-		D582C4E42074EF93004A1383 /* Release */ = {
+		D5FF5DA520750E9500A208BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AppCycler/AppCycler.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				INFOPLIST_FILE = AppCycler/Info.plist;
@@ -287,25 +298,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D582C4CD2074EF93004A1383 /* Build configuration list for PBXProject "AppCycler" */ = {
+		D5FF5D9020750E9500A208BF /* Build configuration list for PBXProject "AppCycler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D582C4E02074EF93004A1383 /* Debug */,
-				D582C4E12074EF93004A1383 /* Release */,
+				D5FF5DA120750E9500A208BF /* Debug */,
+				D5FF5DA220750E9500A208BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D582C4E22074EF93004A1383 /* Build configuration list for PBXNativeTarget "AppCycler" */ = {
+		D5FF5DA320750E9500A208BF /* Build configuration list for PBXNativeTarget "AppCycler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D582C4E32074EF93004A1383 /* Debug */,
-				D582C4E42074EF93004A1383 /* Release */,
+				D5FF5DA420750E9500A208BF /* Debug */,
+				D5FF5DA520750E9500A208BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D582C4CA2074EF93004A1383 /* Project object */;
+	rootObject = D5FF5D8D20750E9500A208BF /* Project object */;
 }
