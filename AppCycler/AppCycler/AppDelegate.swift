@@ -65,8 +65,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @IBAction func startCycling(_ sender: Any) {
+        cycleTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(cycleApp), userInfo: nil, repeats: true)
+    }
+    
+    func cycleApp() {
         cycleButton.title = "Stop"
         NSWorkspace.shared.launchApplication("Safari")
+        
     }
 }
 
