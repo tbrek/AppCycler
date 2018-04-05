@@ -86,7 +86,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func refreshApps(_ sender: Any) {
         running = NSWorkspace.shared.runningApplications.filter{ $0.activationPolicy == .regular}.sorted{ $0.localizedName! < $1.localizedName!}
-        print(running[1].className)
         clearApps()
         setOrderMenus()
         appCount = running.count - 1
@@ -285,7 +284,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func cycleApp() {
-        print(appsToBeCycled[cycle][0])
         NSWorkspace.shared.launchApplication(appsToBeCycled[cycle][0])
         cycle = cycle + 1
         if cycle == appsToBeCycled.count {
