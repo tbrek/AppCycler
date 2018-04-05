@@ -85,6 +85,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @IBAction func refreshApps(_ sender: Any) {
+        cycleButton.isEnabled = false
         running = NSWorkspace.shared.runningApplications.filter{ $0.activationPolicy == .regular}.sorted{ $0.localizedName! < $1.localizedName!}
         clearApps()
         setOrderMenus()
@@ -215,22 +216,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             cycleButton.title = "Cycle"
             cycleTimer.invalidate()
             cycleTimer = nil
-            orderApp1.isEnabled = true
-            orderApp2.isEnabled = true
-            orderApp3.isEnabled = true
-            orderApp4.isEnabled = true
-            orderApp5.isEnabled = true
-            orderApp6.isEnabled = true
-            orderApp7.isEnabled = true
-            orderApp8.isEnabled = true
-            orderApp9.isEnabled = true
-            orderApp10.isEnabled = true
-            orderApp11.isEnabled = true
-            orderApp12.isEnabled = true
-            orderApp13.isEnabled = true
-            orderApp14.isEnabled = true
-            orderApp15.isEnabled = true
-            orderApp16.isEnabled = true
+            enableDropDowns()
             return
         }
     
@@ -238,22 +224,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         cycleButton.title = "Stop"
         cycle = 0
         appsToBeCycled.removeAll()
-        orderApp1.isEnabled = false
-        orderApp2.isEnabled = false
-        orderApp3.isEnabled = false
-        orderApp4.isEnabled = false
-        orderApp5.isEnabled = false
-        orderApp6.isEnabled = false
-        orderApp7.isEnabled = false
-        orderApp8.isEnabled = false
-        orderApp9.isEnabled = false
-        orderApp10.isEnabled = false
-        orderApp11.isEnabled = false
-        orderApp12.isEnabled = false
-        orderApp13.isEnabled = false
-        orderApp14.isEnabled = false
-        orderApp15.isEnabled = false
-        orderApp16.isEnabled = false
+        disableDropDowns()
         
         if orderApp1.titleOfSelectedItem != "-" { appsToBeCycled.append( [app1.stringValue, orderApp1.titleOfSelectedItem!]) }
         if orderApp2.titleOfSelectedItem != "-" { appsToBeCycled.append( [app2.stringValue, orderApp2.titleOfSelectedItem!]) }
@@ -277,7 +248,43 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
     
+    func disableDropDowns() {
+        orderApp1.isEnabled = false
+        orderApp2.isEnabled = false
+        orderApp3.isEnabled = false
+        orderApp4.isEnabled = false
+        orderApp5.isEnabled = false
+        orderApp6.isEnabled = false
+        orderApp7.isEnabled = false
+        orderApp8.isEnabled = false
+        orderApp9.isEnabled = false
+        orderApp10.isEnabled = false
+        orderApp11.isEnabled = false
+        orderApp12.isEnabled = false
+        orderApp13.isEnabled = false
+        orderApp14.isEnabled = false
+        orderApp15.isEnabled = false
+        orderApp16.isEnabled = false
+    }
     
+    func enableDropDowns() {
+        orderApp1.isEnabled = true
+        orderApp2.isEnabled = true
+        orderApp3.isEnabled = true
+        orderApp4.isEnabled = true
+        orderApp5.isEnabled = true
+        orderApp6.isEnabled = true
+        orderApp7.isEnabled = true
+        orderApp8.isEnabled = true
+        orderApp9.isEnabled = true
+        orderApp10.isEnabled = true
+        orderApp11.isEnabled = true
+        orderApp12.isEnabled = true
+        orderApp13.isEnabled = true
+        orderApp14.isEnabled = true
+        orderApp15.isEnabled = true
+        orderApp16.isEnabled = true
+    }
     
     @IBAction func quitApp(_ sender: Any) {
         NSApplication.shared.terminate(self)

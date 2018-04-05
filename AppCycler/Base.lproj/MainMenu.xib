@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -132,7 +132,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="503"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <value key="minSize" type="size" width="480" height="793"/>
             <value key="maxSize" type="size" width="480" height="802"/>
             <view key="contentView" autoresizesSubviews="NO" wantsLayer="YES" id="EiT-Mj-1SZ">
@@ -520,6 +520,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="Esl-ym-RtP"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1K-cB-TQO">
                         <rect key="frame" x="399" y="334" width="59" height="26"/>
@@ -549,6 +552,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="PL5-oG-3So"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jae-ni-lAF">
                         <rect key="frame" x="399" y="309" width="59" height="26"/>
@@ -578,6 +584,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="qdp-QF-BNe"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mML-QB-G5W">
                         <rect key="frame" x="399" y="284" width="59" height="26"/>
@@ -607,6 +616,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="fLj-1E-BzN"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo3-iL-se5">
                         <rect key="frame" x="399" y="259" width="59" height="26"/>
@@ -636,6 +648,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="i30-WH-sre"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cK6-85-gwG">
                         <rect key="frame" x="399" y="234" width="59" height="26"/>
@@ -665,6 +680,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="z9q-hc-vzH"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJA-DG-jzB">
                         <rect key="frame" x="399" y="209" width="59" height="26"/>
@@ -694,6 +712,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="4zB-oe-Xxf"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6H-Sf-E4Y">
                         <rect key="frame" x="399" y="184" width="59" height="26"/>
@@ -723,6 +744,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="Ifc-Xd-dxy"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YvH-Kt-d2b">
                         <rect key="frame" x="399" y="159" width="59" height="26"/>
@@ -752,6 +776,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="U9k-nq-dYr"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thS-Uo-zZs">
                         <rect key="frame" x="399" y="134" width="59" height="26"/>
@@ -781,6 +808,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="Vnb-sH-mZ9"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uXW-uv-2vx">
                         <rect key="frame" x="399" y="109" width="59" height="26"/>
@@ -810,6 +840,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="oQY-rh-jzQ"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpC-x4-50A">
                         <rect key="frame" x="399" y="84" width="59" height="26"/>
@@ -839,6 +872,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="akZ-db-pbr"/>
+                        </connections>
                     </popUpButton>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="goI-D2-AVB">
                         <rect key="frame" x="399" y="59" width="59" height="26"/>
@@ -868,6 +904,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="enableCycyleButton:" target="Voe-Tx-rLC" id="h5V-Xe-Xrz"/>
+                        </connections>
                     </popUpButton>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vh-hL-1ZQ">
                         <rect key="frame" x="409" y="466" width="39" height="17"/>
