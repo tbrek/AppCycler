@@ -16,7 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var appsToBeCycled = [[String]]()
     var running = NSWorkspace.shared.runningApplications.filter{ $0.activationPolicy == .regular}.sorted{ $0.localizedName! < $1.localizedName!}
     
-   
+    @IBOutlet weak var interval: NSTextFieldCell!
+    
+    @IBOutlet weak var refreshList: NSButton!
     @IBOutlet weak var app1: NSTextField!
     @IBOutlet weak var app2: NSTextField!
     @IBOutlet weak var app3: NSTextField!
@@ -73,16 +75,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var cycleButton: NSButton!
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        
         refreshApps((Any).self)
         cycleButton.isEnabled = false
-//        NSLog(orderApp1.titleOfSelectedItem!)
+        
     }
-    
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
     
+    func textFieldEditingDidChange() {
+        
+    }
     
     @IBAction func refreshApps(_ sender: Any) {
         cycleButton.isEnabled = false
@@ -185,9 +188,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
     }
-    
+    // Check if any apps is chosen and timer is not blank
     @IBAction func enableCycyleButton(_ sender: Any) {
-        if (orderApp1.titleOfSelectedItem == "-") &&
+        if ((orderApp1.titleOfSelectedItem == "-") &&
             (orderApp2.titleOfSelectedItem == "-") &&
             (orderApp3.titleOfSelectedItem == "-") &&
             (orderApp4.titleOfSelectedItem == "-") &&
@@ -202,7 +205,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             (orderApp13.titleOfSelectedItem == "-") &&
             (orderApp14.titleOfSelectedItem == "-") &&
             (orderApp15.titleOfSelectedItem == "-") &&
-            (orderApp16.titleOfSelectedItem == "-")
+            (orderApp16.titleOfSelectedItem == "-")) || interval.stringValue == ""
         {
             cycleButton.isEnabled = false
         }
@@ -212,6 +215,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func startCycling(_ sender: Any) {
+        validateInterval((Any).self)
+        if interval.stringValue == "" {
+            return
+        }
         if cycleButton.title == "Stop" {
             cycleButton.title = "Cycle"
             cycleTimer.invalidate()
@@ -244,7 +251,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if orderApp16.titleOfSelectedItem != "-" { appsToBeCycled.append( [app16.stringValue, orderApp16.titleOfSelectedItem!]) }
 
         appsToBeCycled = appsToBeCycled.sorted { $0[1] < $1[1] }
-        cycleTimer = Timer.scheduledTimer(timeInterval: 15.0, target: self, selector: #selector(AppDelegate.cycleApp), userInfo: nil, repeats: true)
+        cycleTimer = Timer.scheduledTimer(timeInterval: Double(interval.stringValue)!, target: self, selector: #selector(AppDelegate.cycleApp), userInfo: nil, repeats: true)
         
     }
     
@@ -265,6 +272,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         orderApp14.isEnabled = false
         orderApp15.isEnabled = false
         orderApp16.isEnabled = false
+        interval.isEnabled = false
+        refreshList.isEnabled = false
     }
     
     func enableDropDowns() {
@@ -284,6 +293,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         orderApp14.isEnabled = true
         orderApp15.isEnabled = true
         orderApp16.isEnabled = true
+        interval.isEnabled = true
+        refreshList.isEnabled = true
     }
     
     @IBAction func quitApp(_ sender: Any) {
@@ -291,13 +302,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func cycleApp() {
+//        Apps workarounds
+        
+        if appsToBeCycled[cycle][0] == "iTerm2" {
+            appsToBeCycled[cycle][0] = "iTerm"
+        }
+        
         NSWorkspace.shared.launchApplication(appsToBeCycled[cycle][0])
         cycle = cycle + 1
         if cycle == appsToBeCycled.count {
             cycle = 0
         }
-
-        
+    }
+    
+    @IBAction func validateInterval(_ sender: Any) {
+        let regex = try! NSRegularExpression(pattern: "[A-Za-z\\W]", options: [])
+        if regex.firstMatch(in: interval.stringValue, options: [], range: NSMakeRange(0, interval.stringValue.count)) != nil {
+            interval.stringValue = ""
+            cycleButton.isEnabled = false
+            }
+        else
+        {
+            enableCycyleButton((Any).self)
+        }
     }
 }
 
