@@ -3,7 +3,7 @@
 //  AppCycler
 //
 //  Created by Tom Brek on 04/04/2018.
-//  Copyright © 2018 Tom Brek. All rights reserved.
+//  Copyright © 2024 Tom Brek. All rights reserved.
 //
 
 import Cocoa
@@ -227,7 +227,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return
         }
     
-        
         cycleButton.title = "Stop"
         cycle = 0
         appsToBeCycled.removeAll()
